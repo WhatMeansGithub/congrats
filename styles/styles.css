@@ -70,11 +70,11 @@ a{
     margin: auto 0px;
 }
 #dennis{
-    background-image: url(./images/shutterstock_200289062-1.webp);
+    background-image: url(.././images/shutterstock_200289062-1.webp);
     background-size: cover;
 }
 #dastin{
-    background-image: url(./images/Blackbird_on_the_toilet.jpeg);
+    background-image: url(.././images/Blackbird_on_the_toilet.jpeg);
     background-size: cover;
 }
 #roger{
@@ -82,11 +82,11 @@ a{
     background-size: cover;
 }
 #erick{
-    background-image: url(../congrats/images/3.jpg);
+    background-image: url(.././congrats/images/3.jpg);
     background-size: cover;
 }
 #anton{
-    background-image: url(./1644298123_1-abrakadabra-fun-p-martovskii-zayats-4.jpg);
+    background-image: url(.././1644298123_1-abrakadabra-fun-p-martovskii-zayats-4.jpg);
     background-size: cover;
 }
 #benjamin{
