@@ -17,7 +17,7 @@ body {
 .hexagon {
     width: 100px; /* Adjust the width of each hexagon */
     height: 115px; /* Adjust the height of each hexagon */
-    background-color: #ff0000; /* Set hexagon background color to golden */
+    background-color: #270000; /* Set hexagon background color to golden */
     position: absolute;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Create hexagonal shape */
 }
@@ -72,7 +72,20 @@ body {
     text-decoration: none;
 }
 
-.hexagon-image {
-    background-image: url("..images/yugi.webm"); /* Set the background image */
-    background-size: cover; /* Make the background image cover the entire hexagon */
+/* Style for the button */
+.glow-button {
+    padding: 15px 25px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    border: none;
+    background-color: #000000; /* Set background color */
+    color: white; /* Set text color */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer;
+    transition: box-shadow 0.3s, background-color 0.3s; /* Add transition effect */
+}
+
+/* Glow effect on hover */
+.glow-button:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /* Add glow effect */
+    background-color: #ffde70; /* Change background color on hover */
 }
