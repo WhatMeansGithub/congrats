@@ -1,5 +1,10 @@
 body {
-    background-color: #ffcbd6; /* Set background color to light pink */
+    background-image: url("../images/dark.jpg"); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Keep the background image fixed in place */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
 }
 
 .hexagon-container {
