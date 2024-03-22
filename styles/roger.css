@@ -84,7 +84,7 @@ body {
 .button-container {
     position: fixed;
     top: 50%; /* Initially center vertically */
-    left: 0;
+    left: 50;
     transform: translateY(-50%);
     z-index: 999; /* Ensure the button stays on top */
 }
