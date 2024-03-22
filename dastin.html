@@ -24,18 +24,33 @@
             I was quite happy that I had caught a blackbird shitting.
         </div>
         <div class="imgfUD">
-            <img src="images/deer.jpeg">
-            <img src="images/Blackbird_on_the_toilet.jpeg">
-            <img src="images/swan_in_fake_fog.webp">
-            <img src="images/Blackbird_with_worm.jpg">
-            <img src="images/crow.webp">>
-            <img src="images/roedeer.webp">
-            <img src="images/swan.webp">
+            <img class="pic2" id="w1" src="images/deer.jpeg">
+            <img class="pic2" id="w2" src="images/Blackbird_on_the_toilet.jpeg">
+            <img class="pic2" id="w3" src="images/swan_in_fake_fog.webp">
+            <img class="pic2" id="w4" src="images/Blackbird_with_worm.jpg">
+            <img class="pic2" id="w5" src="images/crow.webp">>
+            <img class="pic2" id="w6" src="images/roedeer.webp">
+            <img class="pic2" id="w7" src="images/swan.webp">
         </div>
+        <button id="back">back2</button> <button id="go2">go</button>
     </div>
     <script>
+document.addEventListener("DOMContentLoaded", function() {
+    var images = document.querySelectorAll('.pic2'); // Alle Bilder auswählen
+    var currentIndex = 0; // Index des aktuellen Bildes
 
+    document.getElementById('go2').addEventListener('click', function() {       
+        images[currentIndex].style.visibility = 'hidden';
+        currentIndex = (currentIndex + 1) % images.length; // Zirkuläre Indexerhöhung
+        images[currentIndex].style.visibility = 'visible';
+    });
 
+    document.getElementById('back').addEventListener('click', function() {
+        images[currentIndex].style.visibility = 'hidden';
+        currentIndex = (currentIndex - 1 + images.length) % images.length; // Zirkuläre Indexverringerung
+        images[currentIndex].style.visibility = 'visible';
+    });
+});
     </script>
 </div>
 </body>
