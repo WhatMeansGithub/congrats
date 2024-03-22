@@ -7,5 +7,5 @@
 
 /* Glow effect on hover */
 .container:hover {
-    text-shadow: 0 0 5px yellow;
+    text-shadow: 0 0 5px rgb(255, 123, 0);
 }
