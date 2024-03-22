@@ -1,0 +1,11 @@
+.container {
+    text-align: center;
+    color: yellow;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Glow effect on hover */
+.container:hover {
+    text-shadow: 0 0 5px yellow;
+}
