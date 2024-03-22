@@ -11,16 +11,30 @@ background-color: red;
 background-color: orange;
 }
 .complet{
-    width: 100%; /* Dynamische Breite */
-    height: 100%; /* Dynamische Höhe */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
 }
 .partfC{
-    background-color: black;
-    height: 50%;
+    position:absolute;
+    height: 100%;
+    width: 50%;
+    z-index: 2;
+
 }
 #leftelement{
+    background-color: green;
 
 }
 #rightelement{
-    
+    background-color: brown;
+    left: 50%;
+}
+
+
+.killer{
+    clear: both;
 }
