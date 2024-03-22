@@ -8,6 +8,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+
+/* Enlarge "Read More" button on hover */
+.w3-button:hover {
+  transform: scale(1.1);
+}
 </style>
 </head>
 <body class="w3-light-grey">
@@ -62,7 +67,7 @@ and is wrapped around the whole page content, except for the footer in this exam
          I'm always surrounded by people who are famous but humble, and the Coppi DJ sessions every Thursday really help me see this all the time. Never take anything or anyone for granted, show genuine interest and just do what you love, the rest will come to you naturally</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+          <p><a href="dennis3.html" class="w3-button w3-padding-large w3-white w3-border" target="_self"><b>READ MORE »</b></a></p>
         </div>
         <div class="w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
@@ -87,31 +92,51 @@ and is wrapped around the whole page content, except for the footer in this exam
   <!-- Posts -->
   <div class="w3-card w3-margin">
     <div class="w3-container w3-padding">
-      <h4>Popular Posts</h4>
+        <h4>Popular Posts</h4>
     </div>
-    <ul class="w3-ul w3-hoverable w3-white">
-      <li class="w3-padding-16">
-        <img src="images/Imfine.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">How to pretend you're fine to friends and family</span><br>
-        <span>10 Tips to hide your depression</span>
-      </li>
-      <li class="w3-padding-16">
-        <img src="images/harold-book.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Why she's not texting you back</span><br>
-        <span>She probably found someone better</span>
-      </li> 
-      <li class="w3-padding-16">
-        <img src="images/business-harold.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">10 big words to use during meetings</span><br>
-        <span>Confuse your colleagues and yourself whilst coming off as a knowledgeable douchebag</span>
-      </li>   
-      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="images/Meet-Harold - Imgur.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Happy? Don't be!</span><br>
-        <span>20 Reasons to stay sad</span>
-      </li>  
+    <ul id="post-list" class="w3-ul w3-hoverable w3-white">
+        <li class="w3-padding-16">
+            <img src="images/Imfine.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">How to pretend you're fine to friends and family</span><br>
+            <span>10 Tips to hide your depression</span>
+        </li>
+        <li class="w3-padding-16">
+            <img src="images/harold-book.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Why she's not texting you back</span><br>
+            <span>She probably found someone better</span>
+        </li> 
+        <li class="w3-padding-16">
+            <img src="images/business-harold.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">10 big words to use during meetings</span><br>
+            <span>Confuse your colleagues and yourself whilst coming off as a knowledgeable douchebag</span>
+        </li>   
+        <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+            <img src="images/Meet-Harold - Imgur.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Happy? Don't be!</span><br>
+            <span>20 Reasons to stay sad</span>
+        </li>  
     </ul>
-  </div>
+</div>
+<hr>
+
+<script>
+    // Get the post list element
+    const postList = document.getElementById('post-list');
+    
+    // Get the list items
+    const listItems = Array.from(postList.getElementsByTagName('li'));
+    
+    // Randomly shuffle the list items
+    listItems.sort(() => Math.random() - 0.5);
+    
+    // Clear the existing list
+    postList.innerHTML = '';
+    
+    // Append the shuffled list items back to the post list
+    listItems.forEach(item => {
+        postList.appendChild(item);
+    });
+</script>
   <hr> 
  
   <!-- Labels / tags -->
@@ -140,8 +165,8 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <!-- Footer -->
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
-  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+  <a href="index.html" class="w3-button w3-black w3-padding-large w3-margin-bottom" target="_self">Home</a>
+  <a class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Next »</a>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
