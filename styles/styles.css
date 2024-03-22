@@ -67,7 +67,7 @@ a{
     text-align: center;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    margin: auto 0;
+    margin: auto 0px;
 }
 #dennis{
     background-image: url(/images/shutterstock_200289062-1.webp);
@@ -90,7 +90,7 @@ a{
     background-size: cover;
 }
 #benjamin{
-    background-image: url(/images/3.jpg);
+    background-color: white;
     background-size: cover;
 }
 
