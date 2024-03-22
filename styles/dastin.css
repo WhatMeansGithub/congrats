@@ -1,5 +1,5 @@
 .overtitel{
- background-color: aqua;
+  background-color: aqua; 
 }
 .underTitel{
 background: green;
@@ -13,13 +13,13 @@ background-color: orange;
 .complet{
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: absolute; 
     height: 100%;
     width: 100%;
     z-index: 1;
 }
 .partfC{
-    position:absolute;
+    position:absolute; /* so that it can be arranged freely or 2 elements stand next to each other */
     height: 100%;
     width: 50%;
     z-index: 2;
@@ -31,10 +31,5 @@ background-color: orange;
 }
 #rightelement{
     background-color: brown;
-    left: 50%;
-}
-
-
-.killer{
-    clear: both;
+    left: 50%; /* so that it is next to the first */
 }
