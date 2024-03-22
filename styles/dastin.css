@@ -1,0 +1,20 @@
+.overtitel{
+ background-color: aqua;
+}
+.underTitel{
+background: green;
+}
+.textfUD{
+background-color: red;
+}
+.imgfUD{
+background-color: orange;
+}
+.complet{
+    width: 100%; /* Dynamische Breite */
+    height: 100%; /* Dynamische Höhe */
+}
+.partfC{
+    background-color: black;
+    height: 50%;
+}
