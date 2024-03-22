@@ -33,3 +33,13 @@ background-color: orange;
     background-color: brown;
     left: 50%; /* so that it is next to the first */
 }
+.pic2{
+    top: 20%;
+    left: 15%;
+    position: absolute;
+    width: 70%;
+    visibility: hidden;
+}
+#w1{
+    visibility: visible;
+}
