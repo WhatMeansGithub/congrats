@@ -1,0 +1,35 @@
+body{
+    background-color: #04001d;
+    font-family:sans-serif;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+}
+h1{
+    color: #ffffff;
+    font-size: 2em;
+}
+
+.container1{
+    background-color: rgb(3, 28, 61);
+    width: 95%;
+    height: 200px;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
+.container2{
+    background-color: rgb(3, 28, 61);
+    width: 95%;
+    height: 200px;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}

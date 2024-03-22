@@ -1,11 +1,90 @@
+/* edits the text */
 .container {
     text-align: center;
-    color: yellow;
+    color: rgb(255, 255, 255);
     padding: 20px;
     font-family: Arial, sans-serif;
 }
-
-/* Glow effect on hover */
+/* adds glow effect */
 .container:hover {
-    text-shadow: 0 0 5px yellow;
+    text-shadow: 0 0 50px rgb(165, 2, 2);
+}
+h1 {
+    font-size: 48px; /* Set font size to 36 pixels */
+}
+body {
+    background-image: url("../images/divine.jpg"); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+.text1 {
+    text-align: center;
+    padding: 50px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.418); /* Set background color to yellow */
+    padding: 5px; /* Add padding for better appearance */
+    
+}
+/* adds glow effect */
+.text1:hover {
+    text-shadow: 0 0 50px rgb(255, 255, 255);
+}
+.text2 {
+    text-align: center;
+    padding: 50px;
+    color: rgb(251, 255, 0);
+}
+/* adds glow effect */
+.text2:hover {
+    text-shadow: 0 0 5px rgb(255, 136, 0);
+}
+
+.text3 {
+    text-align: center;
+    padding: 50px;
+    color: rgb(145, 0, 0);
+}
+/* adds glow effect */
+.text3:hover {
+    text-shadow: 0 0 5px rgb(253, 98, 93);
+}
+
+.text4 {
+    text-align: center;
+    padding: 50px;
+    color: rgb(255, 255, 255);
+}
+/* adds glow effect */
+.text4:hover {
+    text-shadow: 0 0 10px rgb(13, 146, 255);
+}
+.text5 {
+    text-align: center;
+    padding: 50px;
+    color: rgb(255, 249, 165);
+}
+/* adds glow effect */
+.text5:hover {
+    text-shadow: 0 0 10px rgb(255, 2, 2);
+}
+
+.rotating-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    animation: rotateImage 20s linear infinite; /* Rotate the image over 10 seconds infinitely */
+}
+
+/* Define keyframes for the rotation animation */
+@keyframes rotateImage {
+    from {
+        transform: rotate(0deg); /* Start rotation from 0 degrees */
+    }
+    to {
+        transform: rotate(360deg); /* Rotate to 360 degrees */
+    }
 }
