@@ -28,8 +28,9 @@ h1{
 ul{
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 90%;
     position: relative;
+    padding: 0;
     margin: 30px auto;
 
 }
@@ -38,7 +39,25 @@ li{
     list-style: none;
     border: black 1px solid;
     padding: 30px;
+    width: 16%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 a{
+    display: block;
     text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: auto 0;
+}
+#dennis{
+    background-image: url(/images/shutterstock_200289062-1.webp);
+    background-size: cover;
 }
