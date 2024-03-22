@@ -78,11 +78,11 @@ a{
     background-size: cover;
 }
 #roger{
-    background-image: url(./images/divine.jpg);
+    background-image: url(/images/divine.jpg);
     background-size: cover;
 }
 #erick{
-    background-image: url(./images/3.jpg);
+    background-image: url(/congrats/images/3.jpg);
     background-size: cover;
 }
 #anton{
