@@ -86,6 +86,6 @@ body {
 
 /* Glow effect on hover */
 .glow-button:hover {
-    box-shadow: 0 0 50px 50px rgba(0, 0, 0, 0.5); /* Add glow effect */
-    background-color: #45a049; /* Change background color on hover */
+    box-shadow: 0 0 0px 5px rgba(0, 0, 0, 0.5); /* Add glow effect */
+    background-color: #ffde70; /* Change background color on hover */
 }
